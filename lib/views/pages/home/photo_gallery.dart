@@ -42,7 +42,7 @@ class PhotoGallery extends StatelessWidget {
       children: [
         Stack(
                children: [ Padding(
-                  padding:const EdgeInsets.only(left: (25.0),top:10),
+                  padding:const EdgeInsets.only(left: (25.0),right: 10,top:10),
                  child:
                   Column(children: [
                     SizedBox(
@@ -84,7 +84,7 @@ class PhotoGallery extends StatelessWidget {
              Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        padding:const EdgeInsets.only(left: (25.0),top:10),
+        padding:const EdgeInsets.only(left: (25.0),right:10,top:10),
         child: Text(
           "All your edits",
         ),

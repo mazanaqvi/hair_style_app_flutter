@@ -115,6 +115,7 @@ class AllEdits extends StatelessWidget {
               ),
           
       ],
+      
     ),
       
     );
