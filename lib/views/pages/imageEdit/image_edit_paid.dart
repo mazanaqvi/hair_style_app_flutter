@@ -2,15 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:hairstyle/views/pages/imageEdit/ads.dart';
 import 'package:hairstyle/views/pages/imageEdit/big_image.dart';
-import 'package:hairstyle/views/pages/imageEdit/bottom_bar.dart';
 import 'package:hairstyle/views/pages/imageEdit/icons_tray.dart';
-import 'package:hairstyle/views/pages/imageEdit/image_edit_top_bar.dart';
-
-import '../home/all_your_edits.dart';
-import '../home/photo_gallery.dart';
+import 'package:hairstyle/views/pages/imageEdit/top_bar_image_edit.dart';
+import 'package:hairstyle/views/pages/imageEdit/my_slider.dart';
 import 'hair_styles.dart';
-
-
+import 'navigation_bar.dart';
 class ImageEdit extends StatefulWidget {
   const ImageEdit({ Key? key }) : super(key: key);
 
@@ -27,10 +23,10 @@ class _ImageEditState extends State<ImageEdit> {
           child: ListView(
         children: [
           EditPageTopBar(), BigImage(),
-          IconTray(),HairStyles(),Ads(),BottomBar()
+          IconTray(),HairStyles(),MySlider()
         ],
       )),
-      
+       bottomNavigationBar:const MyBottomBar()
     );
 
   }

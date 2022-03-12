@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hairstyle/views/styles/styles.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class IconTray extends StatelessWidget {
@@ -20,10 +21,11 @@ class IconTray extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(onPressed: ()=>{}, icon:  Icon(Icons.face),),
-                IconButton(onPressed: ()=>{}, icon:  Icon(Icons.circle_outlined),),
-                IconButton(onPressed: ()=>{}, icon:  Icon(Icons.style),),
-                IconButton(onPressed: ()=>{}, icon:  Icon(Icons.settings),),
+                IconButton(onPressed: ()=>{}, icon:  ImageIcon(AssetImage("assets/hairStyle.png"), color: mainColor,size:60,)),
+                IconButton(onPressed: ()=>{}, icon:  Icon(Icons.circle_outlined ,color: thirdColor)),
+                IconButton(onPressed: ()=>{}, icon:  ImageIcon(AssetImage("assets/sessior.png"), color: thirdColor,size:60,)),
+                IconButton(onPressed: ()=>{}, icon:  ImageIcon(AssetImage("assets/settings.png"), color: thirdColor,size:60,)),
+              
               ],
             ),
             ),

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hairstyle/views/pages/home/all_your_edits.dart';
-import 'package:hairstyle/views/pages/home/home.dart';
-import 'package:hairstyle/views/pages/home/photo_gallery.dart';
-import 'package:hairstyle/views/pages/home/tob_bar.dart';
-import 'package:hairstyle/views/pages/imageEdit/image_edit.dart';
+import 'package:hairstyle/views/pages/imageEdit/image_edit_unpaid.dart';
 
 void main() {
   runApp(HairApp());
