@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hairstyle/views/styles/styles.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 class IconTray extends StatelessWidget {
   const IconTray({Key? key}) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hairstyle/views/pages/imageEdit/ads.dart';
 import 'package:hairstyle/views/pages/imageEdit/big_image.dart';
 import 'package:hairstyle/views/pages/imageEdit/icons_tray.dart';
-import 'package:hairstyle/views/pages/imageEdit/top_bar_image_edit.dart';
+import 'package:hairstyle/views/pages/imageEdit/tiltle_bar.dart';
 import 'package:hairstyle/views/pages/imageEdit/my_slider.dart';
 import 'hair_styles.dart';
 import 'navigation_bar.dart';
@@ -20,12 +20,18 @@ class _ImageEditState extends State<ImageEdit> {
     return Scaffold(
       backgroundColor: Color(0xffF9F9F9),
       body: SafeArea(
-          child: ListView(
+          child: Column(
+            children: [
+             
+              ListView(
         children: [
-          EditPageTopBar(), BigImage(),
-          IconTray(),HairStyles(),MySlider()
+               BigImage(),
+              IconTray()
         ],
-      )),
+      ),
+      
+            ],
+          )),
        bottomNavigationBar:const MyBottomBar()
     );
 
